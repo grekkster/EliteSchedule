@@ -20,21 +20,21 @@ export class MyApp {
   //rootPage: any = Page1;
   rootPage: any = MyTeamsPage;
 
-  pages: Array<{title: string, component: any}>;
+  //pages: Array<{title: string, component: any}>;
 
   constructor(public platform: Platform) {
     this.initializeApp();
 
-    // used for an example of ngFor and navigation
-    this.pages = [
-      //{ title: 'Page One', component: Page1 },
-      //{ title: 'Page Two', component: Page2 }
-      { title: 'My teams', component: MyTeamsPage },
-      { title: 'Tournaments', component: TournamentsPage },
-      { title: 'Teams', component: TeamsPage },
-      { title: 'Team detail', component: TeamDetailPage },
-      { title: 'Game', component: GamePage }
-    ];
+    // // used for an example of ngFor and navigation
+    // this.pages = [
+    //   //{ title: 'Page One', component: Page1 },
+    //   //{ title: 'Page Two', component: Page2 }
+    //   { title: 'My teams', component: MyTeamsPage },
+    //   { title: 'Tournaments', component: TournamentsPage },
+    //   { title: 'Teams', component: TeamsPage },
+    //   { title: 'Team detail', component: TeamDetailPage },
+    //   { title: 'Game', component: GamePage }
+    // ];
 
   }
 
