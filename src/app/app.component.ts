@@ -5,6 +5,10 @@ import { StatusBar, Splashscreen } from 'ionic-native';
 //import { Page1 } from '../pages/page1/page1';
 //import { Page2 } from '../pages/page2/page2';
 import { MyTeamsPage } from '../pages/pages';
+import { TournamentsPage } from '../pages/pages';
+import { TeamsPage } from '../pages/pages';
+import { TeamDetailPage } from '../pages/pages';
+import { GamePage } from '../pages/pages';
 
 
 @Component({
@@ -25,7 +29,11 @@ export class MyApp {
     this.pages = [
       //{ title: 'Page One', component: Page1 },
       //{ title: 'Page Two', component: Page2 }
-      { title: 'My Teams', component: MyTeamsPage }
+      { title: 'My teams', component: MyTeamsPage },
+      { title: 'Tournaments', component: TournamentsPage },
+      { title: 'Teams', component: TeamsPage },
+      { title: 'Team detail', component: TeamDetailPage },
+      { title: 'Game', component: GamePage }
     ];
 
   }
