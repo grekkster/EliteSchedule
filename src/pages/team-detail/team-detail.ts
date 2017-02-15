@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
+import { MyTeamsPage } from '../pages';
 /*
   Generated class for the TeamDetail page.
 
@@ -22,6 +23,14 @@ export class TeamDetailPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamDetailPage');
+  }
+
+  goHome() {
+    //this.navCtrl.push(MyTeamsPage);
+    //this.navCtrl.popToRoot();
+    console.log('**parent', this.navCtrl.parent);
+    this.navCtrl.parent.parent.popToRoot();
+      // prvni parent = tabs, druhy parent TeamHomePage
   }
 
 }
