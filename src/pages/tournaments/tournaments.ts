@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-import { MyTeamsPage } from '../pages'
+import { MyTeamsPage, TeamsPage } from '../pages'
 
 /*
   Generated class for the Tournaments page.
@@ -20,8 +20,11 @@ export class TournamentsPage {
     console.log('ionViewDidLoad TournamentsPage');
   }
 
-  navigateBack() {
-    this.navCtrl.pop();
+  // goBack() {
+  //   this.navCtrl.pop();
+  //}
+  itemTapped() {
+    this.navCtrl.push(TeamsPage);
   }
 
 }

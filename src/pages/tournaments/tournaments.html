@@ -6,13 +6,24 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>Tournaments</ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Select a tournament</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button (click)="navigateBack()">Back</button>
+  <!--<button ion-button (click)="navigateBack()">Back</button>-->
+  <ion-list>
+    <button ion-item (click)="itemTapped()">
+      Turnaj looserů
+    </button>
+    <button ion-item (click)="itemTapped()">
+      Turnaj profíků
+    </button>
+    <button ion-item (click)="itemTapped()">
+      Turnaj amatérů
+    </button>
+  </ion-list>
 </ion-content>
