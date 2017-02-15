@@ -14,10 +14,13 @@ import { TeamDetailPage, StandingsPage} from '../pages';
   templateUrl: 'team-home.html'
 })
 export class TeamHomePage {
+  team: any;
   teamDetailTab = TeamDetailPage;
   standingsTab = StandingsPage;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {}
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.team = navParams.data;
+  }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad TeamHomePage');
